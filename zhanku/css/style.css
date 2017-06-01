@@ -1,0 +1,953 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #F4F4F4;
+}
+/*============导航栏开始========================*/
+.lp{
+    width: 36px;
+    height: 100px;
+    display: inline-block;
+    background: url("../img/goTopZcool.png");
+    position: fixed;
+    z-index: 100;
+    bottom:10px;
+    left: 1216.5px;
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    height:43px;
+    background: #FFAB00;
+}
+.header .header-middle{
+    width: 1083px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.header .header-middle .logo1{
+    display: inline-block;
+    width: 121px;
+    height: 20px;
+    background: url("../img/logo.png");
+    position:absolute;
+    top:12px;
+}
+.header .header-middle .logo2{
+    display: inline-block;
+    width: 230px;
+    height: 86px;
+    background: url("../img/logo2.gif");
+    transform: scale(0.5);
+    position: absolute;
+    top:-22px;
+    left: 67px;
+}
+.header .header-middle ul{
+   margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 43px;
+    margin-left: 261px;
+    list-style: none;
+    text-align: center;
+}
+.header .header-middle ul:after{
+    content: " ";
+    clear: both;
+    display: block;
+    /*这里清除浮动用block，用overflow会把隐藏的消除掉*/
+}
+.header .header-middle ul li{
+    float: left;
+    width: 50px;
+    height: 44px;
+    position: relative;
+}
+.header .header-middle ul li:hover{
+    background: #2d2d2d;
+}
+.header .header-middle ul li:hover .list{
+    color: white;
+    background: #2d2d2d;
+    font-weight: bold;
+    /*这里这样写a的颜色是因为a标签默认的颜色优先级比较高*/
+}
+.header .header-middle ul li:hover b{
+    border-color:#8C8C8C #2d2d2d #2d2d2d;
+}
+.header .header-middle ul li .list{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    line-height: 44px;
+    font-size: 14px;
+     width:50px;
+     height: 43px;
+}
+.header .header-middle ul li .l1{
+    font-weight: bold;
+    color: white;
+    background: #2d2d2d;
+}
+.header .header-middle  ul li b{
+    width: 0;
+    height: 0;
+    border-width:5px;
+    border-style: solid;
+    border-color: #8c6000 #ffae00 #ffae00;
+    position: absolute;
+    top:21px;
+    left: 45px;
+}
+.header .header-middle ul li .hide1{
+    width: 336px;
+    height: 92px;
+    background: #2d2d2d;
+    margin-top: -1px;
+    text-align: left;
+    line-height: 24px;
+     display: none;
+     position: absolute;
+     z-index: 100;
+}
+.header .header-middle ul li:hover .hide1{
+     display: block;
+ }
+.header .header-middle ul li .hide1 > a{
+     margin-right:8px;
+     color: #ababab;
+     font-size: 12px;
+     text-decoration: none;
+     display: inline-block;
+}
+.header .header-middle ul li .hide1 a:hover{
+    color:#ffba00;
+}
+
+.header .header-middle ul li .hide2{
+    list-style: none;
+    width: 100px;
+    height: 136px;
+    background: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    line-height: 34px;
+    text-align:left;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.header .header-middle ul li .hide2 .h{
+    color: #ababab;
+    padding-left: 15px;
+    width: 85px;
+    height: 34px;
+}
+.header .header-middle ul li .hide2 .h:hover{
+    color:#ffba00;
+    background: black;
+}
+.header .header-middle ul li:hover .hide2{
+    display: block;
+}
+.header .header-middle ul li .hide3{
+    list-style: none;
+    width: 100px;
+    height: 272px;
+    background: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    line-height: 34px;
+    text-align:left;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.header .header-middle ul li .hide3 li{
+    color: #ababab;
+    padding-left: 15px;
+    width: 85px;
+    height: 34px;
+}
+.header .header-middle ul li .hide3 li:hover{
+    color:#ffba00;
+    background: black;
+}
+.header .header-middle ul li:hover .hide3{
+    display: block;
+}
+
+
+.header .header-middle input[type="text"]{
+    width: 177px;
+    height: 25px;
+    position: absolute;
+    top:8px;
+    right:85px;
+    border: 1px solid #ff9200;
+}
+.header .header-middle .img{
+    width: 24px;
+    height: 25px;
+    background: url("../img/bs.png");
+    position: absolute;
+    top:9px;
+    right: 87px;
+}
+.header .header-middle .img:hover{
+    background-position: 0 24px;
+}
+.header .header-middle .img:hover table{
+    display: block;
+}
+.header .header-middle .img table{
+    width:177px ;
+    height: 67px;
+    background:#2d2d2d;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top:28px;
+    left: -152px;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.header .header-middle .img table tr{
+    width:100% ;
+}
+.header .header-middle .img table tr td{
+    width:59px;
+}
+.header .header-middle .img table tr td input{
+    margin: 0;
+}
+.header .header-middle .img table tr td span{
+    display: inline-block;
+
+}
+.header .header-middle .last{
+    list-style: none;
+    margin: 0;
+    left: 0;
+    width: 70px;
+    float: right;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: -27px;
+}
+.header .header-middle .last .last-main{
+    width: 30px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.header .header-middle .last .last-main:hover{
+    text-decoration: underline;
+}
+/*============导航栏结束========================*/
+
+/*===============内容开始=======================*/
+.content{
+    width: 1083px;
+    margin: 0 auto;
+}
+.content .top{
+    width: 100%;
+
+    -webkit-animation: ll 20s ease infinite;
+    -o-animation: ll 20s ease infinite;
+    animation: ll 20s ease infinite;
+}
+@keyframes ll {
+    0%{
+        background: url("../img/1.jpg");
+    }
+    15%{
+        background: url("../img/2.jpg");
+    }
+    30%{
+        background: url("../img/3.jpg");
+    }
+    50%{
+        background: url("../img/4.jpg");
+    }
+    75%{
+        background: url("../img/5.jpg");
+    }
+    100%{
+        background: url("../img/7.jpg");
+    }
+}
+.content .top1{
+    position: relative;
+    background: white;
+}
+.content .top1 img:nth-child(1){
+    float: left;
+    position: absolute;
+    left: -35px;
+    top:160px;
+    cursor: pointer;
+}
+.content .top1 img:nth-child(2){
+    float: left;
+    position: absolute;
+    right: -35px;
+    top:160px;
+    cursor: pointer;
+}
+.content .top{
+    width: 1083px;
+    height: 350px;
+    font-size: 0;
+    margin-top: 25px;
+    position: relative;
+    border-top:1px solid #f4f4f4;
+    border-bottom:1px solid #f4f4f4;
+    background: white;
+}
+
+.voice{
+    height: 46px;
+    border-bottom:1px solid #f4f4f4 ;
+}
+.voice .img{
+    padding-left: 20px;
+    line-height: 46px;
+    width: 16px;
+    height: 16px;
+}
+.voice span{
+    display: inline-block;
+    padding-left: 45px;
+   position: relative;
+    top:-5px;
+    font-size: 14px;
+}
+.voice .marquee{
+    padding-left: 95px;
+    margin-top: -50px;
+}
+.voice .img2{
+     width: 31px;
+     height: 26px;
+     background: url("../img/nano.gif");
+     float: right;
+    position: relative;
+    top:-46px;
+ }
+.voice .img2:hover{
+    background-position: 0px 26px;
+}
+.voice .img3{
+    width: 31px;
+    height: 26px;
+    background: url("../img/nano.gif");
+    background-position:30px 0 ;
+    float: right;
+    position: relative;
+    top:-46px;
+    margin-right: 20px;
+}
+.voice .img3:hover{
+    background-position: 31px 26px;
+}
+.top2{
+    width: 100%;
+    height: 250px;
+    border-bottom:1px solid #f4f4f4 ;
+    background: white;
+}
+.top2 ul{
+    list-style: none;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top:-30px;
+}
+.top2 ul li{
+    width: 250px;
+    height: 230px;
+    float: left;
+    padding: 9px;
+    border-right:1px solid #f4f4f4 ;
+    cursor: pointer;
+}
+.top3{
+    width: 100%;
+    height: 72px;
+    border-bottom:1px solid #f4f4f4 ;
+    background: white;
+}
+.top3 span{
+    color: #666;
+    font-size: 20px;
+    display: inline-block;
+    height: 100%;
+    line-height: 72px;
+    padding-left: 20px;
+}
+.top3 label{
+    color: #999;
+    font-size: 12px;
+}
+.top3 a{
+    display: inline-block;
+    float: right;
+    width: 113px;
+    height: 32px;
+    background: palegreen;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.top3 .top3-right1{
+    background: url("../img/btn-publish.png");
+}
+.top3 .top3-right2{
+    background: url("../img/btn-publish.png");
+    background-position: 0 32px;
+    margin-left: -10px;
+}
+.middle1{
+    width: 100%;
+    height: 2196px;
+    column-count: 4;
+    column-gap: 0;
+    column-rule:1px solid #f4f4f4;
+    background: white;
+    background: white;
+}
+.middle1 > div{
+    width: 269px;
+    height: 365px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.middle1 div >img {
+    width: 250px;
+    height: 188px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.middle1 div > p{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666666;
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 250px;
+}
+.middle1 div > p:hover{
+    color: red;
+    text-decoration: underline;
+}
+.middle1  .middle1-1 .m1{
+    color:#ff0084;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top:-8px;
+    left: 15px;
+}
+.middle1  .middle1-1 .m1:hover{
+    text-decoration: underline;
+}
+.middle1  .middle1-1 .m2{
+    color: #7f7f7f;
+    text-decoration: none;
+    font-size: 10px;
+    display: inline-block;
+    position: relative;
+    top:-8px;
+    left: 15px;
+}
+.middle1  .middle1-1 .m2 label:hover{
+    color: black;
+    text-decoration: underline;
+}
+.middle1  .middle1-1 .m3{
+    font-size: 12px;
+    color: #7f7f7f;
+    position: relative;
+    top:-5px;
+    left: 15px;
+}
+.middle1  .middle1-1 .m4{
+    font-size: 12px;
+    color: #7f7f7f;
+    position: relative;
+    top:-3px;
+    left: 15px;
+}
+.middle1  .middle1-1 .m4 label{
+    font-size: 12px;
+    color: #f30;
+}
+.middle1  .middle1-1 .m5{
+    float: right;
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
+}
+.middle1  .middle1-1 .m5 a{
+    text-decoration: none;
+    color: #7f7f7f;
+}
+.middle1  .middle1-1 .m5 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.middle1  .middle1-1 .m5 img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.middle1 .middle1-1 .m6{
+    position: relative;
+    top:20px;
+    left: 15px;
+}
+.middle1 .middle1-1 .m6 img{
+    padding: 3px;
+    cursor: pointer;
+}
+.middle1 .middle1-1 .m7{
+    position: relative;
+    top:20px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.middle2{
+    width: 100%;
+    height: 87px;
+    border-bottom:1px solid #f4f4f4 ;
+    background: white;
+    padding-top: 1px;
+}
+.middle2 ul{
+    list-style: none;
+    margin-left: 160px;
+
+}
+.middle2 ul li{
+    float: left;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    background: url("../img/bigPage.png");
+    margin: 8px;
+    color:#7f7f7f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 37px;
+}
+.middle2 ul li:hover{
+    background-position: 0 148px;
+}
+.middle2 span{
+    position: relative;
+    top:8px;
+    left: -170px;
+    letter-spacing: -3px;
+}
+.middle2 ul li b{
+    width: 0;
+    height: 0;
+    border-top:6px solid #4e4e4e;
+    border-bottom:6px solid #f8f8f8;
+    border-left:6px solid #f8f8f8;
+    border-right:6px solid #f8f8f8;
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-left: 6px;
+}
+.middle2 ul li:nth-child(1){
+    background-position: 0 74px;
+    color: white;
+}
+.middle2 label{
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+    position: relative;
+    top:10px;
+    left: 5px;
+}
+.middle2 input{
+    width: 38px;
+    height: 33px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:10px;
+    left: 5px;
+}
+.middle2 button{
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    border:none;
+    margin: 0;
+    background: url("../img/bigPage.png");
+    position: relative;
+    top:10px;
+}
+.foot1{
+    width: 100%;
+    height: 91px;
+    background: white;
+}
+.foot2{
+    width: 100%;
+    height: 450px;
+    background: white;
+}
+.foot2 .foot2-1 {
+    width: 24%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.foot2 .foot2-1 li {
+    float: left;
+    width: 125px;
+    height: 42px;
+}
+/*.foot2 .foot2-1 li:hover .bottom-hide2{*/
+    /*display: block;*/
+/*}*/
+.foot2 .foot2-1 li:hover .bottom-hide1{
+    display: block;
+}
+.foot2 .foot2-1 .f2{
+   position: relative;
+    top:-2px;
+    left:0;
+}
+.foot2 .foot2-1 li .span1,.span2{
+    display: inline-block;
+    height: 42px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    width: 130px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+.foot2 .foot2-1 li .span1 label{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    padding-bottom: 16px;
+    width: 71.38px;
+}
+.foot2 .foot2-1 li:hover label{
+    border-bottom: solid 2px #282828;
+    color:#282828 ;
+}
+.foot2 .foot2-1 li .span2 label{
+    position: relative;
+    top:10px;
+    display: inline-block;
+    padding-bottom: 16px;
+    width: 71.38px;
+}
+.foot2 .foot2-1 li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+.foot2 .foot2-1 li ul li {
+    width: 200px;
+    height: 57px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.foot2 .foot2-1 li ul li span{
+    display: inline-block;
+    line-height: 17px;
+    margin-left: 10px;
+    color: #999;
+    float: left;
+}
+.foot2 .foot2-1 li ul li img {
+    float: left;
+}
+
+.foot2 .foot2-1 li ul li span a{
+    color: #666;
+    text-decoration: none;
+}
+.foot2 .foot2-1 li ul li span a:hover{
+    color: #f30;
+    text-decoration: underline;
+}
+.foot2 .foot2-1 li  .bottom-hide2{
+    position: absolute;
+    left: -125px;
+    display: none;
+}
+.foot2 .foot2-1 li  .bottom-hide1{
+    display: block;
+}
+.foot2 .foot2-2{
+    float: left;
+    border-left: 1px solid #f4f4f4;
+    width:75%;
+}
+.foot2 .foot2-2 .f2-2-1{
+    margin-top: 10px;
+    padding-left: 20px;
+    height: 32px;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+    width: 832px;
+}
+.foot2 .foot2-2 .f2-2-1 .text1{
+    font-size: 14px;
+    color:#333;
+    font-weight: bold;
+}
+.foot2 .foot2-2 .f2-2-1 label{
+    font-size: 12px;
+    color: #999;
+}
+.foot2 .foot2-2 .f2-2-1 .text2{
+    position: absolute;
+    right: 0;
+    padding-right: 40px;
+}
+.foot2 .foot2-2 .f2-2-1 .text2 a{
+    font-size: 15px;
+    color: #4095ce;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.foot2 .foot2-2 .f2-2-1 .text2 a:hover{
+    text-decoration: underline;
+}
+.foot2 .foot2-2 .f2-2-2{
+    height: 84px;
+    font-size: 12px;
+    line-height: 25px;
+}
+.foot2 .foot2-2 .f2-2-2 .text3{
+    padding-top: 10px;
+    display: inline-block;
+}
+.foot2 .foot2-2 .f2-2-2 .text3 label{
+    padding-left: 20px;
+    color: #999;
+}
+.foot2 .foot2-2 .f2-2-2 .text3 label a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #666;
+}
+.foot2 .foot2-2 .f2-2-2 .text3 label a:hover{
+    text-decoration:underline;
+}
+.foot2 .foot2-2 .f2-2-2 .text4{
+    float: right;
+    padding-right: 70px;
+    padding-top: 10px;
+    display: inline-block;
+    color:#666;
+}
+.foot2 .foot2-2 .f2-2-2 .text4 img{
+    vertical-align: middle;
+    float: left;
+}
+.foot2 .foot2-2 .f2-2-2 .text4 label{
+    float: left;
+    margin-top: -5px;
+    margin-left: 15px;
+    display: inline-block;
+}
+.foot2 .foot2-2 .f2-2-3{
+    height: 51px;
+    background: #f9f9f9;
+    font-size: 12px;
+    color: #666;
+}
+.foot2 .foot2-2 .f2-2-3 .text5{
+    padding-left: 20px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.foot2 .foot2-2 .f2-2-3 .text6{
+    float: right;
+    margin-top: 13px;
+    padding-right: 20px;
+}
+.foot2 .foot2-2 .f2-2-3 .text6 span{
+    height: 16px;
+    display: inline-block;
+    border-radius: 16px;
+    border: solid 1px #ededed;
+    background: white;
+    padding:5px 12px;
+    margin-right: 10px;
+}
+.foot3{
+    width: 100%;
+    height: 90px;
+    background: blue;
+    margin-top: 20px;
+}
+/*===============内容结束=======================*/
+
+/*===============尾部开始=======================*/
+.footer{
+    height: 265px;
+    width: 100%;
+    background: #4E4E4E;
+}
+.footer .footer1{
+    height: 47px;
+    width: 100%;
+    margin-top: 20px;
+    background: #ffba00;
+}
+.footer .footer1 button{
+    width: 64px;
+    height: 32px;
+    background: white;
+    border: none;
+    position: relative;
+    left:492px;
+    top:9px;
+    cursor: pointer;
+}
+.footer .footer1 button b{
+    width: 0;
+    height: 0;
+    border-top:5px solid #868686 ;
+    border-bottom:5px solid white;
+    border-left:5px solid white;
+    border-right:5px solid white;
+    display: inline-block;
+    position: relative;
+    top:3px;
+    left: 8px;
+}
+.footer input{
+    width: 274px;
+    height: 28px;
+    position: relative;
+    top:-42px;
+    left: 558px;
+}
+.footer span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/bs.png");
+    position: relative;
+    top:-35px;
+    left: 523px;
+    cursor: pointer;
+}
+.footer span:hover{
+    background-position: 0 24px;
+}
+.footer .footer1 ul{
+    list-style: none;
+    font-size: 12px;
+    width: 64px;
+    background: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 20px;
+    color: #666;
+    position: relative;
+    top:9px;
+    left: 491px;
+    border-bottom: 1px solid #eca128;
+    border-left: 1px solid #eca128;
+    border-right: 1px solid #eca128;
+    display: none;
+}
+.footer .foot:hover ul{
+    display: block;
+}
+.footer .footer1 ul li:hover{
+    background: #ffba00;
+    color: #2d2d2d;
+}
+.footer .footer2{
+    width: 984px;
+    color: #aaa;
+    padding: 0 0 20px 0;
+    line-height: 21px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+.footer .footer2 dl{
+    width: 100px;
+    float: left;
+}
+.footer .footer2 dl dt:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer .footer2 dl .dt img{
+    position: relative;
+    top:-209px;
+    left: -75px;
+    display: none;
+}
+
+.footer .footer2 dl dt:hover img{
+    display: block;
+}
+.footer .footer2 .last{
+    width: 280px;
+    float: right;
+    padding-top: 10px;
+}
+.footer .footer2 .last p{
+    margin: 0;
+}
+.footer .footer2 .last p:nth-child(1):hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============尾部结束=======================*/
